@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="stylesheet.css"
+    />
+    
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="pizzabody" >
+      <form name="pizzaForm" id="input">
+        <label>Pizza name:</label>
+        <input
+          id="pizzaName"
+          type="text"
+          name="pizzaName"
+          maxlength="30"
+          required
+        />
+        <br />
+        <label>Price:</label>
+        <input
+          id="pizzaPrice"
+          type="number"
+          min="0.1"
+          max="99"
+          step=".01"
+          name="pizzaPrice"
+          required
+        />
+        <br />
+        <label>Heat: </label>
+        <input id="pizzaHeat" type="number" min="0" max="3" name="pizzaHeat" />
+        <br />
+        <label>Toppings:</label>
+        <ul class="toppings" id="toppings">
+          <br />
+          <li>
+            <input class="checkbox" type="checkbox" value="cheese" /> Cheese
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="sausage" /> Sausage
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="ketchup" /> Ketchup
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="meat jelly" /> Meat
+            jelly
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="potato" /> Potato
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="banana" /> Banana
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" value="tamato" /> Tomato
+          </li>
+        </ul>
+        <div class="pizzaPictures">
+        <label class="pics" for="sausage_pizza"
+          ><img src="/pictures/sausage_pizza.png"
+        /></label>
+        <input class="pictureCheck" type="checkbox" id="sausage_pizza" />
+        <label class="pics" for="Cheese_pizza"
+          ><img src="/pictures/Cheese_pizza.jpg"
+        /></label>
+        <input class="pictureCheck" type="checkbox" id="Cheese_pizza" />
+        <label class="pics" for="pizza_pizza"
+          ><img src="/pictures/pizza_pizza.jpg"
+        /></label>
+        <input class="pictureCheck" type="checkbox" id="pizza_pizza" />
+        <label class="pics" for="potato_pizza"
+          ><img src="/pictures/Potato_pizza.jpg"
+        /></label>
+        <input class="pictureCheck" type="checkbox" id="potato_pizza" />
+      </div>
+      </form>
+      <button type="submit" class="submit_btn" onclick="savePizza()">
+        Add the pizza!
+      </button>
+      <button type="button" class="submit_btn" onclick="location.href='Menu.html'">Menu</button>
+    </div>
+  </body>
+</html>

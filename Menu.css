@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #DCDCDC;
+}
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px 5px;
+  }
+ul
+{
+ 
+ background-color: lightblue;
+
+ list-style-type:none;
+ 
+}
+li{
+    border-radius: 1px;
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+#pizzaDisplay {
+    margin: 0px;
+    background-color: black;
+    margin: 0px 35%;
+    border-radius: 10px;
+    border: solid 1px;
+}
+.submit_btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 35%;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
